@@ -1,0 +1,22 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class MainMenuController : MonoBehaviour
+{
+    public void PlayGame()
+    {
+        SceneManager.LoadScene("Help");
+    }
+
+    public void Credit()
+    {
+        SceneManager.LoadScene("Credit");
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+}
